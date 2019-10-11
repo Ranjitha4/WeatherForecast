@@ -5,7 +5,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "src/test/resources/FeatureFiles/WeatherForecastApplicationNegative.feature.",
+		features = "src/test/resources/FeatureFiles/WeatherForecastApplicationNegative.feature",
 		plugin = {"pretty","json:target/pmi.json",			
 		"html:target/HTML-Report"}		
 		)
