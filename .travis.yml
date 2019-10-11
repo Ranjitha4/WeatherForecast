@@ -4,3 +4,6 @@ jdk:
 addons:
   chrome: stable
 install: mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+ script:
+   - whereis google-chrome-stable
+   - whereis chromedriver
