@@ -23,7 +23,7 @@ public class WeatherFeatureSteps {
 	@Before
 	public static void beforeMethod()
 	{
-		System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "src/test/resources/Drivers/chromedriver.exe");
 		driver= new ChromeDriver();
 	}
 
