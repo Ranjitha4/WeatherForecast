@@ -23,8 +23,13 @@ public class WeatherFeatureSteps {
 	@Before
 	public static void beforeMethod()
 	{
-		System.out.println(System.getProperties().getProperty("os.arch"));
-		System.setProperty("webdriver.chrome.driver", "src/test/resources/Drivers/chromedriver.exe");
+		if (System.getProperties().getProperty("os.name").toLowerCase().contains("windows")) {
+			System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\Drivers\\chromedriver.exe");
+		} else if (System.getProperties().getProperty("os.name").toLowerCase().contains("mac")) {
+			System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\Drivers\\mac_chromedriver");
+		} else if (System.getProperties().getProperty("os.name").toLowerCase().contains("linux")) {
+			System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\Drivers\\linux_chromedriver");
+		}
 		driver= new ChromeDriver();
 	}
 
