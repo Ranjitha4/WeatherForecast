@@ -3,7 +3,4 @@ jdk:
 - oraclejdk13
 addons:
   chrome: stable
- script:
-   - whereis google-chrome-stable
-   - whereis chromedriver
 install: mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
