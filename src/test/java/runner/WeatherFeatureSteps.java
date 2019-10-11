@@ -28,7 +28,7 @@ public class WeatherFeatureSteps {
 		} else if (System.getProperties().getProperty("os.name").toLowerCase().contains("mac")) {
 			System.setProperty("webdriver.chrome.driver", "src/test/resources/Drivers/mac_chromedriver");
 		} else if (System.getProperties().getProperty("os.name").toLowerCase().contains("linux")) {
-			System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "/usr/local/share/chromedriver");
 		}
 		driver= new ChromeDriver();
 	}
