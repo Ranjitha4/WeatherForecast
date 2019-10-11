@@ -24,11 +24,11 @@ public class WeatherFeatureSteps {
 	public static void beforeMethod()
 	{
 		if (System.getProperties().getProperty("os.name").toLowerCase().contains("windows")) {
-			System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\Drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "src/test/resources/Drivers/chromedriver.exe");
 		} else if (System.getProperties().getProperty("os.name").toLowerCase().contains("mac")) {
-			System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\Drivers\\mac_chromedriver");
+			System.setProperty("webdriver.chrome.driver", "src/test/resources/Drivers/mac_chromedriver");
 		} else if (System.getProperties().getProperty("os.name").toLowerCase().contains("linux")) {
-			System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\Drivers\\linux_chromedriver");
+			System.setProperty("webdriver.chrome.driver", "src/test/resources/Drivers/linux_chromedriver");
 		}
 		driver= new ChromeDriver();
 	}
